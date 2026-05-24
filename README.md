@@ -1,20 +1,104 @@
-# BUSA3001
-This project applies Natural Language Processing (NLP) to analyse Apple iPhone customer reviews and transform unstructured textual data into actionable business insights. 
+# NLP Decision Support: Apple Customer Review Analysis
 
-A Python-based NLP pipeline was developed using libraries such as Pandas, NLTK, Gensim, Scikit-learn, and Matplotlib to process and analyse the dataset.
+**University of Newcastle · Business Analytics · 2024**  
+`Python` `NLP` `Sentiment Analysis` `Topic Modelling` `Data Visualisation` `Decision Support`
 
-The dataset initially contained 1,165 customer reviews, which were cleaned by removing duplicates and missing values, resulting in 903 valid reviews for analysis.
+---
 
-Text preprocessing techniques were applied, including tokenization, stop-word removal, lemmatization, emoji removal, and text normalization to prepare the reviews for analysis.
+## 📌 Project Overview
 
-Sentiment analysis was conducted by classifying reviews into positive and negative categories based on customer rating scores.
+Businesses receive thousands of customer reviews but rarely have the tools to analyse them at scale. This project addresses that gap by building a Python-based Natural Language Processing (NLP) pipeline that transforms unstructured Apple iPhone customer reviews into structured, actionable business insights for managerial decision-making.
 
-Exploratory Data Analysis (EDA) was performed to understand rating distributions and sentiment trends across time.
+Rather than reading reviews one by one, the pipeline automatically identifies customer sentiment patterns, recurring themes, and product concern areas — enabling faster, evidence-based decisions across product development, marketing, and customer experience.
 
-Topic modeling using Latent Dirichlet Allocation (LDA) was implemented to identify 10 key themes in customer feedback, such as battery performance, camera quality, usability, product condition, and value for money.
+---
 
-Data visualisation techniques including word clouds, frequency plots, bigrams, and trigrams were used to highlight frequently discussed product features and sentiment patterns.
+## 🎯 Business Problem
 
-The results demonstrate how NLP can help businesses identify customer needs, detect product strengths and weaknesses, and support data-driven decision-making in areas such as product development, marketing, and customer service.
+Apple and similar consumer electronics companies collect large volumes of customer feedback but face challenges in:
+- Identifying which product features are driving positive or negative sentiment
+- Prioritising product improvement areas based on actual customer voice
+- Tracking emerging quality or usability concerns at scale
 
-The study also highlights ethical considerations, including data privacy, potential bias in datasets, and the responsible use of AI insights for business decision-making.
+This project demonstrates how NLP can be applied to address these challenges in a scalable, repeatable way.
+
+---
+
+## 📂 Repository Contents
+
+| File | Description |
+|---|---|
+| `Python Code.ipynb` | Full NLP pipeline — data cleaning, EDA, sentiment analysis, topic modelling, visualisation |
+| `Apple Product dataset.csv` | Raw dataset of 1,165 Apple iPhone customer reviews |
+| `A Text Analytics Case Study on Apple Customer Reviews Report.pdf` | Full project report including methodology, findings, and business recommendations |
+
+---
+
+## 🔧 Methodology
+
+### 1. Data Preparation
+- Loaded 1,165 customer reviews; removed duplicates and missing values → **903 valid reviews retained**
+- Applied text preprocessing: tokenisation, stop-word removal, lemmatisation, emoji removal, and text normalisation
+
+### 2. Exploratory Data Analysis (EDA)
+- Analysed rating distributions and sentiment trends across the dataset
+- Identified patterns in review length, rating frequency, and sentiment polarity
+
+### 3. Sentiment Analysis
+- Classified reviews into **positive** and **negative** categories based on customer rating scores
+- Visualised sentiment distribution and identified key drivers of each sentiment class
+
+### 4. Topic Modelling (LDA)
+- Applied **Latent Dirichlet Allocation (LDA)** to identify **10 recurring customer themes**
+- Key themes identified: battery performance, camera quality, usability, product condition, value for money, customer service, software performance, durability, delivery/packaging, and accessories
+
+### 5. Visualisation
+- Generated **word clouds**, frequency plots, bigrams, and trigrams to highlight commonly discussed product features
+- Produced charts showing topic distribution and sentiment patterns across the dataset
+
+---
+
+## 📊 Key Findings & Business Value
+
+| Theme | Insight | Business Action |
+|---|---|---|
+| Battery performance | Most frequently cited concern in negative reviews | Prioritise battery improvement in next product cycle |
+| Camera quality | Top driver of positive sentiment | Leverage in marketing communications |
+| Value for money | Mixed sentiment — price sensitivity evident | Inform pricing and bundle strategy |
+| Product condition | Significant complaints about packaging/delivery | Review supply chain and packaging standards |
+| Customer service | Recurring negative theme | Flag to customer experience team |
+
+> **Outcome:** This pipeline demonstrates how NLP can reduce manual review analysis effort significantly and provide product, marketing, and service teams with a structured, evidence-based view of the customer voice — supporting faster and more confident business decisions.
+
+---
+
+## 🛠️ Tools & Libraries
+
+| Category | Tools |
+|---|---|
+| Language | Python 3 |
+| Data Processing | Pandas, NumPy |
+| NLP | NLTK, Gensim |
+| Machine Learning | Scikit-learn (LDA) |
+| Visualisation | Matplotlib, Seaborn, WordCloud |
+| Environment | Jupyter Notebook |
+
+---
+
+## ⚖️ Ethical Considerations
+
+This project acknowledges the importance of responsible AI use in business contexts:
+- **Data privacy:** Analysis is based on publicly available review data; no personally identifiable information was used
+- **Bias awareness:** Sentiment models trained on rating-based labels may reflect rating bias rather than true sentiment
+- **Responsible use:** NLP insights should inform, not replace, human judgement in business decisions
+
+---
+
+## 📄 Full Report
+
+A complete project report covering methodology, detailed findings, visualisations, and stakeholder recommendations is available in the repository:  
+📎 [View Full Report (PDF)](./A%20Text%20Analytics%20Case%20Study%20on%20Apple%20Customer%20Reviews%20Report.pdf)
+
+---
+
+*Project completed as part of the Bachelor of Business Analytics at the University of Newcastle, 2024.*
